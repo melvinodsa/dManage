@@ -3,14 +3,10 @@ An open source software for managing academic activities.
 #Initial ideas setting up
 As of now we are planning to do a repository based on the JSP servlet. There are several issues associated with the same, but the idea behind remains a UI friendly interface preferably in JSP with functionalities embedded within the same, quite similar to  our DSS. There should be separate database mostly postgres for the work done.
 
-Separate logins for students, faculties, staff and ultimately admin should be there. The students should be able to login check their marks, faculties should be able to enter the mark of students as \textbf{.csv files or \textbf{.xls files. The staff should be able to access the data of several students batch wise or individually and should be limited to certain aspects defined later. There is process of registration of students to preceding semesters and thus there is the process of mark entering, which is again defined by the faculty, usually 20, 20, 10 but the 100 marks can be defined by the faculty as it seems. I am just listing out the major requirements as they come to my mind. The basic structure will be evolving soon enough. First few pull requests might be having a lot of clutter and repetition, which will be clarified later on.
+Separate logins for students, faculties, staff and ultimately admin should be there. The students should be able to login check their marks, faculties should be able to enter the mark of students as __.csv__ files or __.xls__ files. The staff should be able to access the data of several students batch wise or individually and should be limited to certain aspects defined later. There is process of registration of students to preceding semesters and thus there is the process of mark entering, which is again defined by the faculty, usually 20, 20, 10 but the 100 marks can be defined by the faculty as it seems. I am just listing out the major requirements as they come to my mind. The basic structure will be evolving soon enough. First few pull requests might be having a lot of clutter and repetition, which will be clarified later on.
 
-As of now the for students the process of detail entering the very first step in registering. After they have registered as users in the system, one or two days before the process of registration they will get a mail regarding the starting of process of registration. After that they are supposed to login to the system and select the courses they want. In the case of electives, every staff from all departments will be able to login and add a list of electives to the department page. On adding the electives the details of students who can choose the elective should be made available, details such as the semester they should belong, minimum cgpa etc. If the elective is first come first serve then that can be selected along or without the CGPA restriction. All these are decided before registration and on completion of this process the course will be visible to all eligble students who can apply for the same. Once they get the list of courses they might be able to select these only if they are eligible. If the course is overrun they will get a notification and won't be able to register. The course faculty can be specified at the time of creation of course, if more students request for the elective the faculty can login and add them. The eligiblity criteria for the course are mentioned in section \ref{sec:eligibility.
+As of now the for students the process of detail entering the very first step in registering. After they have registered as users in the system, one or two days before the process of registration they will get a mail regarding the starting of process of registration. After that they are supposed to login to the system and select the courses they want. In the case of electives, every staff from all departments will be able to login and add a list of electives to the department page. On adding the electives the details of students who can choose the elective should be made available, details such as the semester they should belong, minimum cgpa etc. If the elective is first come first serve then that can be selected along or without the CGPA restriction. All these are decided before registration and on completion of this process the course will be visible to all eligble students who can apply for the same. Once they get the list of courses they might be able to select these only if they are eligible. If the course is overrun they will get a notification and won't be able to register. The course faculty can be specified at the time of creation of course, if more students request for the elective the faculty can login and add them. The eligiblity criteria for the course are mentioned in the __eligibility__ section.
 
-
-El
-Contribute the initial ideas to the project.
-Please see the project wiki and issues.
 
 ##What all things can staff do?
 This lists the duties that a staff can perform. Their power is somewhat limited and is mostly restricted to
@@ -49,7 +45,7 @@ This section list all the possible functions of faculties.
 * Staffs can also watch all courses and can see the list of marks and all the associated documents as soon as the faculty upload them.
 * Other faculties cannot see what one faculty does but if two faculties are added for asingle course he can see what the other faculty does.
 * If a faculty change happens, one faculty can assign another and he will have monitoring status over the course. That is he can watch the course but cannot enter marks or delete/add students. He can also add a co-faculty who will have the same power as the main faculty but this time both can add marks. Individual editing of marks are possible only for one faculty at a time.
-* At the time of registration he can add students to the course by searching mentioned in \ref{sec:eligibility. Once the day for registration is over, the student has to pay an amount and only after that the faculty can add the student. Faculty should get notification when a student is added for the course by the other faculty. At the time of registration anyway these mailing wil be off. So that only a few mails are send. If he need a round the clock history he can turn on notifications so that he might get the a notification every time the registration process is complete.
+* At the time of registration he can add students to the course by searching mentioned in __eligibility__ section. Once the day for registration is over, the student has to pay an amount and only after that the faculty can add the student. Faculty should get notification when a student is added for the course by the other faculty. At the time of registration anyway these mailing wil be off. So that only a few mails are send. If he need a round the clock history he can turn on notifications so that he might get the a notification every time the registration process is complete.
 
 ##Registration Process
  This is somewhat the main process happening .
@@ -59,25 +55,23 @@ This section list all the possible functions of faculties.
  * On login they will be given a login with option to start registration. All the student who are supposed to register should register on that day.
  * They will be given a data box where the roll number will be entered.
  * A page will appear with information regarding the student such as
-
  * Name rollnumber department  
-*  No due from place 1.
+ *  No due from place 1.
  * No due from place 2.
  * No due from place 3.
  * Fee remittance with details.
  * Fee2 remittance with details.
  * Semester registered.
  * from date-to date.
-* A unique hash.
+ * A unique hash.
 
  After this a small strip of paper with from date-todate a hash (8-10 alphanumeric) semester UG branch will be generated. This is printed on to a sticker and pasted behind the id card. At the time of registration a paper with fee details and other essentialities are printed on to a paper and this is has got the same hash. A softcopy will be generated with the hash as file name  and will be kept in the folder mentioned earlier as well as one will be printed along with the sticker. The bottom part is the one tore off.
 
-##Eligibility for Electives\label{sec:eligibility
+##Eligibility for Electives
 This is usually a strict requirement for elective but most of the time some kind of a human judgement is needed for the same. Any student who is eligible will be able to select the elective, if it had not run out of its maximum participant limit. This is usually 80 or set at the time of creation of elective. There are certain cases such
 
 * The maximum limit is over.
 * The student has got no eligibility there, these conditions are listed below.
-
 * Minimum CGPA.
 * Minimum grade in any subject.
 * A previous elective or course.
@@ -94,4 +88,3 @@ As mentioned above  there are two types of staff logins. The first type are the 
 
 #Tools used
 There are so many tools used for this. We need a relation database and I am thinking we can go with postgres. It is completely free oracle db is also a nice choice. I don't know can we use spring framework? Don't know what it does as of now. So will leave all these questions here. Fill it with your imagination and knowledge. Note that we are not using any cgi based tools. The idea is to have a tool mostly based on JAVA but to what extent I don't know. We will be using any industry standard. The idea is to have that much familiarity with all industry based tools. Django is promising but it is not that widely used. JSP with spring frame work would serve the purpose though I am not familiar with it as of now. Please edit the rest of the document.
-\end{document
