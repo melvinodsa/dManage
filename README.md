@@ -25,11 +25,9 @@ Usually the thigns students can do include
 * They can login and select the courses they can choose.
 * They can view their results anytime.
 * They get notifications when there is a pending activity which includes.
-
 * Teacher Evaluvation.
 * Fee payment details filling.
 * Course registration.
-
 * If they are delayed then the course registration automatically stops and they need remit some fee amount.
 * The students will be notified via mail about this. After this their account will be locked.
 * After registration with/without delay they will get a softcopy to their mail with all the details mentioend. They are supposed to take two copies of the same and give one to the faculty and keep one to themselves. This is a one time generated softcopy and will be given in print to the student at the time or registration along with signature of the staff. The FA has to keep it and the same with the student.
