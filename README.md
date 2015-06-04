@@ -60,7 +60,7 @@ This section list all the possible functions of faculties.
  * Fee remittance with details.
  * Fee2 remittance with details.
  * Semester registered.
- * from date-to date.
+ * From date-to date.
  * A unique hash.
 
  After this a small strip of paper with from date-todate a hash (8-10 alphanumeric) semester UG branch will be generated. This is printed on to a sticker and pasted behind the id card. At the time of registration a paper with fee details and other essentialities are printed on to a paper and this is has got the same hash. A softcopy will be generated with the hash as file name  and will be kept in the folder mentioned earlier as well as one will be printed along with the sticker. The bottom part is the one tore off.
