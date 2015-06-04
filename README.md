@@ -9,7 +9,7 @@ As of now the for students the process of detail entering the very first step in
 
 
 ##What all things can staff do?
-This lists the duties that a staff can perform. Their power is somewhat limited and is mostly restricted to
+This lists the duties that a staff  perform. Their power is somewhat limited and is mostly restricted to
 
 * Adding courses to the department page.
 * They cannot remove courses as at the time of adding course a faculty must be selected and only this faculty is able to remove the course. They can only deactivate the course. Deactivate means it will not be visible to all the logins it was used to be visible.
