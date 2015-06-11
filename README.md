@@ -85,4 +85,4 @@ As mentioned above  there are two types of staff logins. The first type are the 
 
 
 #Tools used
-There are so many tools used for this. We need a relation database and I am thinking we can go with postgres. It is completely free oracle db is also a nice choice. I don't know can we use spring framework? Don't know what it does as of now. So will leave all these questions here. Fill it with your imagination and knowledge. Note that we are not using any cgi based tools. The idea is to have a tool mostly based on JAVA but to what extent I don't know. We will be using any industry standard. The idea is to have that much familiarity with all industry based tools. Django is promising but it is not that widely used. JSP with spring frame work would serve the purpose though I am not familiar with it as of now. Please edit the rest of the document.
+We will be using Apache tomact server and JSP as of now. We have initiated a servlet and index page for now.
